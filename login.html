@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website Design</title>
+    <script src="https://kit.fontawesome.com/17967c193a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./main_css/style.css">
+    <link rel="stylesheet" href="./main_css/loginStyle.css">
+</head>
+<body>
+    <section class="header" id="head">
+        <nav>
+            <a href=""><img src="images/logo.png" alt=""></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="./index.html">DCU</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="login-wrapper">
+            <h2>LOGIN</h2>
+            <form method="get" action="./board/list.html" id="login-form"> <!--method : post로 변경 / action : 서버 URL 작성 // 현재는 일단 임의로 로그인 이후 페이지로 이동하게 설정-->
+                <input type='text' name="UserID" placeholder="아이디">
+                <br>
+                <input type='password' name="UserPWD" placeholder="비밀번호">
+                <br>
+                <label for="remember-check">
+                    <input type="checkbox" id="remember-check"> 아이디 저장하기
+                </label>
+                <input type="submit" value="로그인">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
